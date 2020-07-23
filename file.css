@@ -1,0 +1,234 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(255, 136, 0),rgb(217, 255, 0));
+
+}
+#pic{
+    width: 30%;
+    height: 100px;
+    float: right;
+    background-color: rgb(202, 241, 139);
+}
+#hh1{
+    float: left;
+    line-height: 100px;
+    padding: 0px 15px;
+}
+header a{
+    color: rgb(22, 31, 26);
+}
+#pic1{
+    height: 100%;
+    border-radius:50%;
+    width: 100px;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(12, 22, 17);
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+nav a:hover{
+    background-color: rgb(224, 240, 232);
+    color: rgb(13, 109, 13);
+    height: 100%;
+    
+}
+main{
+   width: 100%;
+   height: 450px;
+   background-color: aquamarine; 
+   border-top: 3px solid white;
+   animation: a1 15s infinite;
+
+}
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: teal;
+    text-align: center;
+    float: left;
+}
+aside img{
+    width: 90%;
+    
+}
+#h1as{
+    padding: 2px 0px;
+    border-bottom: 2px solid rgb(206, 250, 141);
+    color: greenyellow;
+}
+#art1{
+    width: 70%;
+    height: 450px;
+   
+    float: right;
+    position: relative;
+}
+#box{
+    width: 400px;
+    height: 180px;
+    background-color: teal;
+    color: greenyellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 15px;
+}
+#box h1{
+    border-bottom: 3px solid greenyellow;
+    padding: 15px 0px;
+    font-family: 'Changa', sans-serif;
+}
+#box p{
+    font-family: 'Changa', sans-serif;
+    /*text-align: justify;*/
+}
+#sochial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#sochial img{
+    width: 45px;
+    border-bottom: 2px solid rgb(206, 250, 141);
+    padding-bottom: 7px;
+}
+#sochial img:hover{
+    width: 55px;
+    border-bottom: 2px solid greenyellow;
+}
+#ft{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+}
+#ft img{
+    width: 28%;
+    margin: 10px;
+}
+
+@keyframes a1{
+    0%{
+        background-color: yellowgreen;
+    }
+    30%{
+        background-color: rgb(177, 241, 177);
+    }
+    70%{
+        background-color: rgb(117, 172, 14);
+    }
+    100%{
+        background-color: rgb(35, 49, 6);
+    }
+}
+@media only screen and (max-width:940px){
+    #pic{
+        width: 35%;
+    }
+    #art1{
+        width: 60%;
+    }
+    aside{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:1070px){
+    #pic{
+        width: 35%;
+    }
+    #art1{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:940px){
+    #pic{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:804px){
+    header,main{
+        height: auto;
+}
+    #pic{
+        height: auto;
+        width: 100%;
+        text-align: center;
+        
+    }
+    #pic1,#hh1{
+        float:none;
+    }
+  span a{
+      text-decoration: none;
+  }
+  nav{
+      width: 100%;
+  }
+  aside{
+      width: 100%;
+  }
+  #art1{
+      width: 100%;
+      height: 220px;
+      background-color: rgb(118, 189, 11);
+  }
+  #pic1{
+    width: 150px;
+}
+}
+  @media only screen and (max-width:500px){
+   nav ul li{
+       
+       display:block;
+        
+               
+   }
+   #pic1{
+       width: 150px;
+   }
+}  
+   @media only screen and (orientation:landscape) and (max-width:500px){
+header,main{
+width: auto;
+height: auto;
+
+}
+   
+}
+@media only screen and (orientation:portrait) and (max-width:499px){
+    header,main{
+    width: auto;
+    height: auto;
+  
+    } 
+     #art1{
+         display: none;
+     }
+       
+    }
